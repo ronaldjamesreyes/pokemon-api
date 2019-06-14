@@ -44,7 +44,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card{
+    margin-top: 20px;
     text-align: center;
     margin-bottom: 20px;
+    border: 3px solid #007bff;
+    border-radius:15px;
 }
 </style>
