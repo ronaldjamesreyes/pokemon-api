@@ -1,15 +1,15 @@
 <template>
-    <div class="col-3">
+    <div class="col-3" v-if="pokemon.sprites && pokemon.sprites.front_shiny">
         <div class="card" style="width: 18rem;">
             <img v-bind:src="pokemon.sprites.front_shiny" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title text-capitalize">{{pokemon.name}}</h5>
-                <p class="pokemon-height">Height: {{pokemon.height*3.937}} units <br> Weight: {{pokemon.weight}} units</p>
+                <div>Height: {{pokemon.height*3.93701.toFixed(2)}} Inches </div>
+                <div>Weight: {{pokemon.weight*0.220462.toFixed(2)}} Pounds</div>
             </div>
         </div>
     </div>
 </template>
-
 
 <script>
 export default {
@@ -45,6 +45,6 @@ export default {
 <style scoped>
 .card{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 </style>
