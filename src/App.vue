@@ -8,7 +8,7 @@
         class="btn btn-primary m-1"
         v-on:click="type_click(type.name)"
       >{{type.name}}</span>
-      <div class="row">
+      <div class="erow">
         <Card :url="item.pokemon.url" v-for="item in pokemon_current" :key="item.pokemon.name"></Card>
       </div>
     </div>
