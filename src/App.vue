@@ -1,18 +1,14 @@
 <template>
-  <div id="app">
-    <h5>created by Ronald Reyes</h5>
-    <div class="container text-capitalize">
-      <h1 class="text-center display-1 m-5">{{activeType}} Pokemon Type</h1>
-      <span
-        v-for="type in pokemon_types"
-        class="btn btn-primary m-1"
-        v-on:click="type_click(type.name)"
-      >{{type.name}}</span>
-      <div class="erow">
-        <Card :url="item.pokemon.url" v-for="item in pokemon_current" :key="item.pokemon.name"></Card>
-      </div>
+    <div id="app">
+        <h5>created by Ronald Reyes</h5>
+        <div class="container text-capitalize">
+            <h1 class="text-center display-1 m-5">{{activeType}} Pokemon Type</h1>
+            <span v-for="type in pokemon_types" class="btn btn-primary m-1" v-on:click="type_click(type.name)">{{type.name}}</span>
+            <div class="row">
+                <Card :url="item.pokemon.url" v-for="item in pokemon_current" :key="item.pokemon.name"></Card>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

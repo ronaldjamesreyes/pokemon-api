@@ -1,14 +1,14 @@
 <template>
-  <div class="col-md-4" v-if="pokemon.sprites && pokemon.sprites.front_shiny">
-    <div class="card" style="width: 18rem;">
-      <img v-bind:src="pokemon.sprites.front_shiny" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title text-capitalize">{{pokemon.name}}</h5>
-        <p>Height: {{pokemon.height*4.0.toFixed(2)}} Inches</p>
-        <div>Weight: {{pokemon.weight*1.0.toFixed(2)}} Pounds</div>
-      </div>
+    <div class="col-md-4" v-if="pokemon.sprites && pokemon.sprites.front_shiny">
+        <div class="card" style="width: 18rem;">
+            <img v-bind:src="pokemon.sprites.front_shiny" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title text-capitalize">{{pokemon.name}}</h5>
+                <p>Height: {{pokemon.height*4.0.toFixed(2)}} Inches</p>
+                <p>Weight: {{pokemon.weight*1.0.toFixed(2)}} Pounds</p>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
