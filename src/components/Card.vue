@@ -4,7 +4,7 @@
             <img v-bind:src="pokemon.sprites.front_shiny" class="card-img-top" alt="..." />
             <div class="card-body">
                 <h5 class="card-title text-capitalize">{{pokemon.name}}</h5>
-                <p>Height: {{pokemon.height}} Inches</p>
+                <p>Height: {{pokemon.height*4}} Inches</p>
                 <p>Weight: {{pokemon.weight}} Pounds</p>
             </div>
         </div>
@@ -44,7 +44,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.Card {
+.card {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 20px;
