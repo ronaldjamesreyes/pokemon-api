@@ -50,6 +50,9 @@ export default {
 .card{
     text-align: center;
     margin-bottom: 20px;
+<<<<<<< HEAD
+>>>>>>> parent of a029668... adding card borders
+=======
 >>>>>>> parent of a029668... adding card borders
 }
 </style>
