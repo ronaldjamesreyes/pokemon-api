@@ -4,8 +4,8 @@
             <img v-bind:src="pokemon.sprites.front_shiny" class="card-img-top" alt="..." />
             <div class="card-body">
                 <h5 class="card-title text-capitalize">{{pokemon.name}}</h5>
-                <p>Height: {{pokemon.height*4.0.toFixed(2)}} Inches</p>
-                <p>Weight: {{pokemon.weight*1.0.toFixed(2)}} Pounds</p>
+                <p>Height: {{pokemon.height*4}} Inches</p>
+                <p>Weight: {{pokemon.weight*1}} Pounds</p>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@ export default {
   name: 'Card',
   data: function(){
       return{
-          pokemon:""
+          pokemon: ""
       }
   },
   props: {
@@ -43,11 +43,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.card{
+.card {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 20px;
     border: 3px solid #007bff;
-    border-radius:15px;
+    border-radius: 15px;
 }
 </style>
