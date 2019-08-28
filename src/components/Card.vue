@@ -39,11 +39,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+<<<<<<< HEAD
 .card {
   margin-top: 20px;
   text-align: center;
   margin-bottom: 20px;
   border: 3px solid #007bff;
   border-radius: 15px;
+=======
+.card{
+    text-align: center;
+    margin-bottom: 20px;
+>>>>>>> parent of a029668... adding card borders
 }
 </style>
